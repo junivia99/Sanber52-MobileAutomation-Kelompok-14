@@ -57,11 +57,11 @@ User should not be able to search with invalid credentials
     #step 2 : verify search page appears
     Verify Search Page Appears
 
-    #step 4 : input invalid flight number
+    #step 3 : input invalid flight number
     Input Flight Number                ${INVALID_FLIGHT_NUMBER}
 
-    #step 5 : click search button
+    #step 4 : click search button
     Click Search In Button On Search Page
 
-    #step  : verify result of invalid flight number search --> contain text 'Please enter valid Flight Number'
+    #step 5 : verify result of invalid flight number search --> contain text 'Please enter valid Flight Number'
     Verify Error Message Invalid Flight Number
