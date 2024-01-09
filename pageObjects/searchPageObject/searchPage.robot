@@ -2,7 +2,6 @@
     
 Resource        ../base/base.robot
 Variables        searchpage_locators.yaml
- 
 
 *** Keywords ***
 
@@ -26,3 +25,5 @@ Verify Flight Number Page
     Wait Until Element is Visible    ${label_departed_searchPage}
     Wait Until Element is Visible    ${label_result_departed_searchPage}
 
+Verify Error Message Invalid Flight Number
+    Wait Until Page Contains Element   ${error_message_invalid_flight_number}
