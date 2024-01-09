@@ -5,7 +5,6 @@ Variables        homepage_locators.yaml
 
 *** Keywords ***
 Verify Home Page appears
-
     Wait Until Element is Visible    ${logo_homePage}
 
 Click Sign In Button on Home Page

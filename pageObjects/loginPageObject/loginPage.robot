@@ -1,8 +1,12 @@
 *** Settings ***
     
 Resource        ../base/base.robot
+Resource    ../homePageObject/homePage.robot
 Variables        loginpage_locators.yaml
  
+*** Variables ***
+${VALID_EMAIL}               support@ngendigital.com
+${VALID_PASSWORD}            abc123
 
 *** Keywords ***
 Verify Login Appears
@@ -20,3 +24,12 @@ Input User Password On Login Page
 
 Click Sign In Button On Login Page 
     Click Element    ${signIn_button_loginPage}
+
+Login With Valid Credentials
+    [Arguments]    ${email}=${VALID_EMAIL}    ${password}=${VALID_PASSWORD}
+    Verify Home Page appears
+    Click Sign In Button On Home Page
+    Verify Login Appears
+    Input User Email On Login Page     ${email}
+    Input User Password On Login Page  ${password}
+    Click Sign In Button On Login Page

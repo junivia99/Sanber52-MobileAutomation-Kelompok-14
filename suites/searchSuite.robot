@@ -1,14 +1,22 @@
+
 *** Settings ***
 
 Resource        ../pageObjects/homePageObject/homePage.robot
 Resource        ../pageObjects/loginPageObject/loginPage.robot
 Resource        ../pageObjects/searchPageObject/searchPage.robot
+Resource        ../pageObjects/base/base.robot
+
+Test Setup                 Run Keywords
+...                        Open Flight Application    
+...                        Login with valid credentials
+Test Teardown              Close Flight Application
 
 *** Variables ***
 
 ${VALID_EMAIL}           support@ngendigital.com
 ${VALID_PASSWORD}        abc123 
 ${VALID_FLIGHT_NUMBER}    DA935
+${INVALID_FLIGHT_NUMBER}   XXXXX
 
 
 
@@ -41,3 +49,19 @@ User should be able to search with valid credentials
     Click Search In Button On Search Page 
     # Step 13 : Verify flight number page
     Verify Flight Number Page
+
+User should not be able to search with invalid credentials
+    #step 1 : click search button on home page
+    Click Search Button On Home Page
+
+    #step 2 : verify search page appears
+    Verify Search Page Appears
+
+    #step 4 : input invalid flight number
+    Input Flight Number                ${INVALID_FLIGHT_NUMBER}
+
+    #step 5 : click search button
+    Click Search In Button On Search Page
+
+    #step  : verify result of invalid flight number search --> contain text 'Please enter valid Flight Number'
+    Verify Error Message Invalid Flight Number
