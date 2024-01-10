@@ -19,3 +19,4 @@ Daftar Anggota Team Beserta Username Github
 TESTING RECORDING LINK :
 
 1. Search (negative case) : Mei Nurfatdilah --> https://drive.google.com/file/d/14HnKKQ6BO5PD5fgQ9pNe5rr5W3sHCWb5/view?usp=sharing
+2. Book flight (negative case) : Ajrul Amilin Muflih --> https://drive.google.com/file/d/10UrziKpLhAwkqtaTxDNQ-oJ6Zzip1Y_Z/view?usp=sharing

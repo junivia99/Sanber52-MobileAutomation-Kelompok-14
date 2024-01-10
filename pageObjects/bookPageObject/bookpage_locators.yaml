@@ -33,10 +33,19 @@ end_date_hidden: '//android.widget.TextView[@resource-id="com.example.myapplicat
 end_date_label: 'textEndDate'
 
 field_year: '//android.widget.TextView[@resource-id="android:id/date_picker_header_year"]'
-choose_start_date: '//android.view.View[@content-desc="25 December 2024"]'
+choose_wrong_date: '//android.view.View[@content-desc="15 August 2019"]'
+choose_newyear_date: '//android.view.View[@content-desc="01 January 2024"]'
+choose_present_date: '//android.view.View[@content-desc="10 January 2024"]'
 
 scroll_year: '/hierarchy/android.widget.FrameLayout'
 next_button: '//android.widget.ImageButton[@content-desc="Next month"]'
 prev_button: '//android.widget.ImageButton[@content-desc="Previous month"]'
 choose_year: '//android.widget.TextView[@text="2024"]'
+
+price_1: '//android.widget.Button[@resource-id="com.example.myapplication:id/price1"]'
+price_2: '//android.widget.Button[@resource-id="com.example.myapplication:id/price2"]'
+price_9: '//android.widget.Button[@resource-id="com.example.myapplication:id/price9"]'
 ok_button_calender: '//android.widget.Button[@resource-id="android:id/button1"]'
+
+success_book_page: '//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]'
+success_book_label: 'Your flight is booked. Reservation number is CADX2214'
