@@ -1,0 +1,42 @@
+# locator for positive case
+book_button_bookPage: '//android.widget.Button[@resource-id="com.example.myapplication:id/book"]'
+tab_oneway_bookPage: '//android.support.v7.app.ActionBar.Tab[@content-desc="One Way"]'
+tab_roundtrip_bookPage: '//android.support.v7.app.ActionBar.Tab[@content-desc="Round Trip"]'
+book_flight_button: '//android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]'
+
+list_from_city: '//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]'
+from_city_new_york: '//android.widget.TextView[@text="New York"]'
+from_city_chicago: '//android.widget.TextView[@text="Chicago"]'
+from_city_toronto: '//android.widget.TextView[@text="Toronto"]'
+
+list_to_city: '//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerTo"]'
+to_city_london: '//android.widget.TextView[@text="London"]'
+to_city_paris: '//android.widget.TextView[@text="Paris"]'
+to_city_ottawa: '//android.widget.TextView[@text="Ottawa"]'
+
+list_class: '//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerClass"]'
+class_economy: '//android.widget.TextView[@text="Economy"]'
+class_first: '//android.widget.TextView[@text="First"]'
+class_bussiness: '//android.widget.TextView[@text="Business"]'
+
+radio_button_flight: '//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]'
+radio_button_flight_hotel: '//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlightHotel"]'
+check_box_day: '//android.widget.CheckBox[@resource-id="com.example.myapplication:id/checkBoxDay"]'
+
+start_dates: '//android.widget.Button[@text="03-Aug"]'
+return_date: '//android.widget.Button[@text="21-Aug"]'
+label_title_price: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textView6"]'
+confirm_button: '//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]'
+start_date: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textStartDate"]'
+end_date: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textEndDate"]'
+end_date_hidden: '//android.widget.TextView[@resource-id="com.example.myapplication:id/hiddenEndDate"]'
+end_date_label: 'textEndDate'
+
+field_year: '//android.widget.TextView[@resource-id="android:id/date_picker_header_year"]'
+choose_start_date: '//android.view.View[@content-desc="25 December 2024"]'
+
+scroll_year: '/hierarchy/android.widget.FrameLayout'
+next_button: '//android.widget.ImageButton[@content-desc="Next month"]'
+prev_button: '//android.widget.ImageButton[@content-desc="Previous month"]'
+choose_year: '//android.widget.TextView[@text="2024"]'
+ok_button_calender: '//android.widget.Button[@resource-id="android:id/button1"]'
