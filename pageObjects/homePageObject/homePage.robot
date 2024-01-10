@@ -17,3 +17,9 @@ Verify User Is Logged In
 Click Search Button On Home Page
     Wait Until Element is Visible        ${search_button_homePage}
     Click Element                        ${search_button_homePage}
+
+Book Flight Page
+    Wait Until Element is Visible    ${book_button_bookPage}
+    Click Element                    ${book_button_bookPage}
+    Wait Until Element is Visible    ${tab_oneway_bookPage}
+    Wait Until Element is Visible    ${tab_roundtrip_bookPage}
