@@ -140,6 +140,17 @@ Choose Holiday End Date 20 Agustus 2024
 Choose Category Flight
     Click Element    ${radioBtn_Ctgflight}
 
+Choose Price
+    Wait Until Element Is Visible    ${price_page}
+    Click Element    ${harga_tiket}
+    Click Element    ${btn_cnfrmPrice}
+
+Verify Book Success
+    Wait Until Element Is Visible    ${scs_book_text}
+    Element Should Contain Text    ${scs_book_text}   ${scs_book_label}
+
+
+
 
 
 

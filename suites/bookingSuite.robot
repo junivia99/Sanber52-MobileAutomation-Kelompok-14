@@ -15,5 +15,9 @@ Test Teardown              Close Flight Application
 User Booking One Way Positive Case    
     #Step 1 : Pergi ke page Book
     Book Flight Page
-    #Step 2 : Choose wrong date (before 10 Januari 2024)
+    #Step 2 : Pilih Tujuan Dan tanggal 
     Choose One Way Trip Positive
+    # Pilih harga
+    Choose Price
+    
+    
