@@ -4,7 +4,6 @@ Resource        ../base/base.robot
 Variables        bookpage_locators.yaml
 
 *** Keywords ***
-
 Choose One Way Trip
     Click Element    ${tab_oneway_bookPage}
     Click Element    ${list_from_city}
@@ -16,7 +15,7 @@ Choose One Way Trip
     Click Element    ${list_class}
     Wait Until Element is Visible    ${class_bussiness}
     Click Element    ${class_bussiness}
-    Choose Holiday Date
+    Choose Holiday Date 
     Verify End_date Visibility
     Click Element    ${radio_button_flight}
     Click Book
@@ -44,6 +43,7 @@ Verify End_date Visibility
 
 Verify Confirmation Page
     Wait Until Element is Visible    ${label_title_price}
+
 
 Choose Holiday Date
     #01 Janurari 2024
@@ -99,3 +99,47 @@ Click Confirm Price
 Check Booking Success
     Wait Until Element is Visible    ${success_book_page}
     Element Should Contain Text    ${success_book_page}    ${success_book_label}
+
+# Positive Case
+Choose One Way Trip Positive
+    Click Element                    ${tab_oneway_bookPage}
+    Click Element                    ${list_from_city}
+    Wait Until Element Is Visible    ${from_city_toronto}
+    Click Element                    ${from_city_toronto}
+    Click Element                    ${list_to_city}
+    Wait Until Element Is Visible    ${to_city_ottawa}
+    Click Element                    ${to_city_ottawa}
+    Click Element                    ${list_class}
+     Wait Until Element is Visible   ${class_first}
+    Click Element                    ${class_first}
+    Choose Holiday Start Date 7 Agustus 2024
+    Choose Holiday End Date 20 Agustus 2024
+    Click Element                    ${radioBtn_Ctgflight}
+    Click Book
+
+Choose Holiday Start Date 7 Agustus 2024
+    Click Element    ${start_date}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${field_year}
+    Wait Until Element is Visible    ${year_2024}
+    Click Element    ${year_2024}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${7_agustus}
+    Click Element    ${ok_button_calender}
+
+Choose Holiday End Date 20 Agustus 2024
+    Click Element    ${end_date}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${field_year}
+    Wait Until Element is Visible    ${year_2024}
+    Click Element    ${year_2024}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${20_agustus}
+    Click Element    ${ok_button_calender}
+
+Choose Category Flight
+    Click Element    ${radioBtn_Ctgflight}
+
+
+
+

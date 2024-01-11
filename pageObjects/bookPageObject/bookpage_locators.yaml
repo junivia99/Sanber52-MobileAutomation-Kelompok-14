@@ -49,3 +49,10 @@ ok_button_calender: '//android.widget.Button[@resource-id="android:id/button1"]'
 
 success_book_page: '//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]'
 success_book_label: 'Your flight is booked. Reservation number is CADX2214'
+
+year_2024: '//android.widget.TextView[@resource-id="android:id/text1" and @text="2024"]'
+7_agustus: '//android.view.View[@content-desc="07 August 2024"]'
+kalender: '//android.view.View[@resource-id="android:id/month_view"]'
+20_agustus: '//android.view.View[@content-desc="20 August 2024"]'
+radioBtn_Ctgflight: '//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]'
+
