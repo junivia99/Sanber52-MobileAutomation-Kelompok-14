@@ -5,7 +5,8 @@ Library        AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}                                 http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}                              Android
-${PLATFORM_VERSION}                           9.0
+${PLATFORM_VERSION}                           9.0 
+                                            # ubah version menjadi 12.0 jika ingin menjalankan "bookingSuite.robot"
 ${DEVICE_NAME}                                emulator-5554
 ${APP_PACKAGE}                                com.example.myapplication
 ${APP_ACTIVITY}                               com.example.myapplication.MainActivity

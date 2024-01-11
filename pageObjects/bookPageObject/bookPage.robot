@@ -126,6 +126,15 @@ Choose Holiday Start Date 7 Agustus 2024
     Wait Until Element is Visible    ${kalender}
     Click Element    ${7_agustus}
     Click Element    ${ok_button_calender}
+Choose Holiday Start Date 25 Agustus 2024
+    Click Element    ${start_date}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${field_year}
+    Wait Until Element is Visible    ${year_2024}
+    Click Element    ${year_2024}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${25_agustus}
+    Click Element    ${ok_button_calender}
 
 Choose Holiday End Date 20 Agustus 2024
     Click Element    ${end_date}
@@ -137,17 +146,47 @@ Choose Holiday End Date 20 Agustus 2024
     Click Element    ${20_agustus}
     Click Element    ${ok_button_calender}
 
+Choose Holiday End Date 27 Agustus 2024
+    Click Element    ${end_date}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${field_year}
+    Wait Until Element is Visible    ${year_2024}
+    Click Element    ${year_2024}
+    Wait Until Element is Visible    ${kalender}
+    Click Element    ${27_agustus}
+    Click Element    ${ok_button_calender}
+
 Choose Category Flight
     Click Element    ${radioBtn_Ctgflight}
 
-Choose Price
+Choose Price One Way 
     Wait Until Element Is Visible    ${price_page}
     Click Element    ${harga_tiket}
     Click Element    ${btn_cnfrmPrice}
 
+Choose Price Round Trip 
+    Wait Until Element Is Visible    ${price_page}
+    Click Element    ${harga_tiketRT}
+    Click Element    ${btn_cnfrmPrice}
 Verify Book Success
     Wait Until Element Is Visible    ${scs_book_text}
     Element Should Contain Text    ${scs_book_text}   ${scs_book_label}
+
+Choose Round Trip Positive
+    Click Element                    ${tab_roundtrip_bookPage}
+    Click Element                    ${list_from_city}
+    Wait Until Element Is Visible    ${from_city_chicago}
+    Click Element                    ${from_city_chicago}
+    Click Element                    ${list_to_city}
+    Wait Until Element Is Visible    ${to_city_london}
+    Click Element                    ${to_city_london}
+    Click Element                    ${list_class}
+    Wait Until Element is Visible    ${class_bussiness}
+    Click Element                    ${class_bussiness}
+    Choose Holiday Start Date 25 Agustus 2024
+    Choose Holiday End Date 27 Agustus 2024
+    Click Element                    ${radio_button_flight_hotel}
+    Click Book
 
 
 
